@@ -1,0 +1,57 @@
+
+ .main {
+    min-height: 84vh;
+    background-image: url("../../assets/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.title {
+    align-self: center;
+    width: 33%;
+    height: 300px;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid #278D9F;
+    border-radius: 30px;
+    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%);
+    backdrop-filter: blur(31px);
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1132px) {
+    .title {  
+        font-size: 48px;    
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .title {
+        font-size: 46px;
+        padding: 10px;
+    }
+   
+}
+.start-btn {
+    width: 30%;
+    align-self: center;
+    font-size: 30px;
+    border-radius: 28px;
+    padding: 10px;
+    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%);
+    backdrop-filter: blur(31px);
+    border: 3px solid #278D9F;
+    color: #fff;
+    transition: all 2s
+}
+.start-btn:hover {
+    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 1.15) 0%, rgba(36, 197, 219, 0) 100%);
+}

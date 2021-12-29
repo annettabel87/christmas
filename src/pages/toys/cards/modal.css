@@ -1,0 +1,13 @@
+.select-modal {
+    position: absolute;
+    top: 50vh;
+    left: calc(50vw - 250px);
+    width: 500px;
+    height: 250px;
+    background-color: #13424b;
+    text-align: center;
+    font-size: 38px;
+    border-radius: 20px;
+    padding-top: 75px;
+    border: 1px solid #30a3b9;
+}

@@ -1,0 +1,16 @@
+.filters-container {
+    display: flex;
+    justify-content: space-between;    
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.toys-page {
+    padding: 15px 0;
+}
+
+@media (max-width: 1600px) {
+    .filters-container {
+        justify-content: space-around;
+    }
+}

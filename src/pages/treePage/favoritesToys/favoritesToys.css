@@ -1,0 +1,81 @@
+.favorite-container {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.toys-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.toys-card {
+    width: 115px;
+    height: 115px;
+    border-radius: 10px;
+    background-color: #97d8e49e;
+    position: relative;
+}
+.favorete-card-img {
+    width: 70px;
+    position: absolute;
+    display: block;
+    /* margin: 0 auto; */
+    top: calc(50% - 43px);
+    left: calc(50% - 43px);
+}
+.count-card {
+    margin: 7px 7px;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+.drag-enter {
+    border: 5px solid white;
+}
+.decorated-container {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;
+    width: 100%;
+}
+.decorated-tree-container {
+    display: flex;
+    overflow-x: auto;
+    width: 500px;
+    height: 150px;
+    gap: 10px;
+}
+.decorated-tree-container::-webkit-scrollbar {	
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.568);    
+  }
+  
+  .decorated-tree-container::-webkit-scrollbar-thumb {
+     background-color: #187b8d;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.decorated-tree {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    border-radius: 10px;
+    background-color: #97d8e49e;
+    padding: 3px 25px;
+}
+.decorated-tree-img {
+    height: 100px;
+}
+@media (max-width: 1024px) {
+
+    .favorite-container {
+        width: 100%;
+    }
+
+}

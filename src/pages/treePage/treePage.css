@@ -1,0 +1,19 @@
+.treePage-container {
+    display: flex;
+    justify-content: space-between;    
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.tree-page {
+    padding: 15px 0;
+}
+
+@media (max-width: 1024px) {
+
+    .treePage-container {
+        flex-wrap: wrap;
+        
+    }
+
+}

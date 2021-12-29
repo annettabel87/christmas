@@ -1,0 +1,40 @@
+
+.card {
+    width: 304px;
+    height: 280px;
+    border-radius: 10px;
+    border: 1px solid #1b6370;
+    background-color: rgba(31, 112, 127, .3);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 8px;
+}
+.card-title {
+    width: 100%;
+    font-size: 24px;    
+}
+.card-img {
+  width: 90px;
+  height: fit-content;
+  object-fit: contain;
+  pointer-events: none;
+}
+.card-info {
+    width: 195px;
+    margin-top: -20px;
+    padding-left: 10px;
+    pointer-events: none;
+    line-height: 1;
+    user-select: none;
+    font-size: 17px;    
+}
+
+.card-info p span {
+    padding-left: 9px;
+}
+.card.select {
+    border: 1px solid #97d8e4;
+    background-color: rgba(54, 179, 201, 0.514);
+    backdrop-filter: blur(6px);
+}

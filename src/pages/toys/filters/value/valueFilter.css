@@ -1,0 +1,151 @@
+.value {
+    width: 31%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(31, 112, 127, .3);
+    backdrop-filter: blur(6px);
+}
+.filter-title {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.filter-subtitle {
+    font-size: 20px;
+}
+.filter-shape, .filter-color, .filter-size, .filter-favorite {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-shape button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    transition: 1s;
+}
+.filter-shape button:hover {
+    filter: invert(37%) sepia(100%) saturate(329%) hue-rotate( 
+    141deg) brightness(89%) contrast(90%);
+}
+.filter-shape button.active {
+    filter: invert(25%) sepia(100%) saturate(329%) hue-rotate( 
+        76deg) brightness(79%) contrast(121%);
+}
+.filter-shape button:nth-child(2) {
+    background-image: url('../../../../../assets/svg/ball.svg');
+}
+.filter-shape button:nth-child(3) {
+    background-image: url('../../../../../assets/svg/bell.svg');
+}
+.filter-shape button:nth-child(4) {
+    background-image: url('../../../../../assets/svg/cone.svg');
+}
+.filter-shape button:nth-child(5) {
+    background-image: url('../../../../../assets/svg/snowflake.svg');
+}
+.filter-shape button:nth-child(6) {
+    background-image: url('../../../../../assets/svg/toy.svg');
+}
+
+.filter-color button {
+    position: relative;
+    width: 30px;
+    height: 30px;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.filter-color button::after {
+    display: none;
+}
+.filter-color button:hover {
+    opacity: 1;
+}
+.filter-color button.active {
+    border-color: cyan;
+}
+.filter-color button.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 6px;
+    height: 10px;
+    border: solid rgb(0, 0, 0);
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.filter-color button:nth-child(2) {
+    background-color: white;
+}
+.filter-color button:nth-child(3) {
+    background-color: yellow;
+}
+.filter-color button:nth-child(4) {
+    background-color: red;
+}
+.filter-color button:nth-child(5) {
+    background-color: blue;
+}
+.filter-color button:nth-child(6) {
+    background-color: green;
+}
+
+.filter-size button {
+    background-image: url('../../../../../assets/svg/ball.svg');   
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    transition: 1s;
+}
+.filter-size button:hover {
+    filter: invert(37%) sepia(100%) saturate(329%) hue-rotate( 
+    141deg) brightness(89%) contrast(90%);
+}
+
+.filter-size button.active {
+    filter: invert(25%) sepia(100%) saturate(329%) hue-rotate( 
+        76deg) brightness(79%) contrast(121%);
+}
+.filter-size button:nth-child(2) {
+    width: 42px;
+    height: 42px;
+}
+.filter-size button:nth-child(3) {
+    width: 37px;
+    height: 37px;
+}
+.filter-size button:nth-child(4) {
+    width: 32px;
+    height: 32px;
+}
+.filter-favorite-input {
+    display: none;
+}
+.filter-favorite-input-label {
+    width: 30px;
+    display: block;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #187b8d;
+    border: 1px solid #0b6575;
+}
+.filter-favorite-input:checked + .filter-favorite-input-label {
+    background-color: #49c4da;
+    border-color: #187b8d;
+  }
+
+  
